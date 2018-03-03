@@ -1,12 +1,12 @@
-package com.microservice.email.service;
+package com.microservice.email;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EmailServiceApplication {
+public class EmailApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EmailServiceApplication.class, args);
+		SpringApplication.run(EmailApplication.class, args);
 	}
 }

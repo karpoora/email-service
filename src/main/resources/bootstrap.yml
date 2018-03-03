@@ -1,3 +1,7 @@
+spring:
+  application:
+    name: server-config
+
 eureka:         #tells about the Eureka server details and its refresh time
   instance:
     leaseRenewalIntervalInSeconds: 1
@@ -5,18 +9,9 @@ eureka:         #tells about the Eureka server details and its refresh time
     prefer-ip-address: false
   client:
     serviceUrl:
+#      defaultZone: https://service-registry-app.herokuapp.com/eureka
       defaultZone: http://35.229.116.148:8761//eureka
     healthcheck:
       enabled: true
     lease:
       duration: 5
-
-spring:
-  application:
-    name: server-admin
-  cloud:
-    config:
-      discovery:
-        enabled: true
-        service-id: server-config
-

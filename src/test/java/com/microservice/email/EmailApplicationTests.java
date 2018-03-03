@@ -1,4 +1,4 @@
-package com.microservice.email.service;
+package com.microservice.email;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class EmailServiceApplicationTests {
+public class EmailApplicationTests {
 
 	@Test
 	public void contextLoads() {
