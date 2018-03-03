@@ -1,6 +1,12 @@
 spring:
   application:
-    name: server-config
+    name: email-service
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: server-config
+
 
 eureka:         #tells about the Eureka server details and its refresh time
   instance:
