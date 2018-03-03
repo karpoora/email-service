@@ -1,4 +1,4 @@
-package com.microservices.emailservice;
+package com.microservice.email.service;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
