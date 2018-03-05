@@ -1,23 +1,23 @@
+
 spring:
   application:
     name: email-service
   cloud:
     config:
       discovery:
-        enabled: true
         service-id: server-config
+        enabled: true
 
 
-eureka:         #tells about the Eureka server details and its refresh time
+eureka:
   instance:
     leaseRenewalIntervalInSeconds: 1
     leaseExpirationDurationInSeconds: 2
     prefer-ip-address: false
   client:
     serviceUrl:
-#      defaultZone: https://service-registry-app.herokuapp.com/eureka
       defaultZone: http://35.229.116.148:8761//eureka
-    healthcheck:
-      enabled: true
     lease:
       duration: 5
+    fetch-registry: true
+    register-with-eureka: true
